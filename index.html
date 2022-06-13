@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div class="calculator">
+        <input class="calculator-screen" id="input" readonly="readonly" />
+        <div class="calculator-keys">
+            <div class="row">
+                <button id="ac" class="all-clear" onclick="operator('AC')">AC</button>
+                <button id="del" class="del" onclick="operator('Del')">Del</button>
+                <button id="per" class="percentage" onclick="operator('%')">%</button>
+                <button id="div" class="operator" onclick="operator('/')">/</button>
+            </div>
+            <div class="row">
+                <button id="num7" class="number" onclick="number(7)">7</button>
+                <button id="num8" class="number" onclick="number(8)">8</button>
+                <button id="num9" class="number" onclick="number(9)">9</button>
+                <button id="mult" class="operator" onclick="operator('*')">x</button>
+            </div>
+            <div class="row">
+                <button id="num4" class="number" onclick="number(4)">4</button>
+                <button id="num5" class="number" onclick="number(5)">5</button>
+                <button id="num6" class="number" onclick="number(6)">6</button>
+                <button id="min" class="operator" onclick="operator('-')">-</button>
+            </div>
+            <div class="row">
+                <button id="num1" class="number" onclick="number(1)">1</button>
+                <button id="num2" class="number" onclick="number(2)">2</button>
+                <button id="num3" class="number" onclick="number(3)">3</button>
+                <button id="plus" class="operator" onclick="operator('+')">+</button>
+            </div>
+            <div class="row">
+                <button id="num0" class="number zero-btn" onclick="number(0)">0</button>
+                <button id="dot" class="decimal" onclick="operator('.')">.</button>
+                <button id="calc" class="equal-sign" onclick="calculate()">=</button>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
